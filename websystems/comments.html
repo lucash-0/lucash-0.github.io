@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Comments - Lucas' Web Systems Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRoboto:300" rel="stylesheet">
+  <link rel="stylesheet" href="websystems.css">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui">
+</head>
+
+<body>
+
+  <div id="nav" class="nav">
+    <div class="nav-container">
+      <a href="./" id="logo" title="Logo"></a>
+      <div class="links">
+        <a href="index.html" title="Home page">Home</a>
+        <a href="past.html" title="My past page">My past</a>
+        <a href="future.html" title="My future page">My future</a>
+        <a href="comments.html" class="active" title="Comments page">Comments</a>
+        </div>
+        <div class="contact">
+          <a href="https://www.instagram.com/lucash.97/" target="_blank" title="Lucas's Instagram">
+            <img src="images/instagram.png" alt="Instagram"/>
+          </a>
+          <a href="mailto:lucas.m.hahn@student.uts.edu.au" target="_blank" title="Lucas's student email lucas.m.hahn@student.uts.edu.au">
+            <img src="images/email.png" alt="Email" />
+          </a>
+          </div>
+      </div>
+
+    </div>
+
+<div id="comments" class="container">
+  <h1>Comments</h1>
+
+  <h2>Technical aspects</h2>
+  <p>
+    The structure for this website primarily consisted of divs manipulated by CSS using either a class or id. A class was used if the element appears across multiple pages whereas an id was generally used for specific identification of an element. Sometimes I would select an element based on its parent, for example, I would select a div using class and then use CSS to manipulate its sibling divs/elements. I used advanced CSS in flex display property to ensure elements were positioned correctly as well as remained responsive for different browser window and device sizes. I also used absolute positioning to ensure the logo would always remain in the middle of the nav bar.
+  </p>
+  <p>
+    The nav bar has a fixed position to make sure that it always remains at the top of the screen. Because of the structure of the navbar (fixed positioning), it wasn’t suited for all screen sizes and wasn’t responsive. I fixed this by using @media CSS which creates new CSS settings for selectors when the browser window size meets the criteria. For my website, it was when the width was less than 950px. If the browser window does meet the criteria, I manipulate the nav bar so that the logo and email/Instagram icons remain in the same position, however, the links are pushed down below these and are centred which allows for a smaller device to properly view and use the website. I also changed the viewport through the meta tag on each page so that people viewing on mobile would have the website properly scaled and be responsive while also ensuring that the design wouldn’t break. Most elements are responsive in size and this is achieved using % rather than stating its height in px. Some elements, however, need static widths and heights such as the nav bar and the nav bar links.
+  </p>
+  <p>
+    On the home page, I used anchor tags to create the scroll to main content effect. On the HTML and body selectors, I set the scrolling to smooth as well as other generic options such as setting margin and padding to 0. I linked to two font styles offered by Google including Roboto and Open Sans. In the main stylesheet I chose which font would be with which text tag, e.g. h1 and h2 were Roboto and p was Open Sans. Most effects were achieved using CSS3 techniques such as hover selectors, background-colour, background-image, box-shadow, and more. The main element of the website, the large responsive backgrounds, were achieved using absolute positioning and non-repeating, centred background cover CSS settings. The transparent navbar is only achieved through a small amount of javascript which fades the transparent navbar to background colour when scrolling down. This is not needed for the functionality of the website. If javascript is turned off, the nav bar defaults to a coloured background as HTML/CSS has no way of knowing how the user scrolls so it defaults to the default background style I set in the stylesheet. The copyright year is also updated by javascript but defaults to 2019 if Javascript is turned off. Therefore the functionality of the website is not harmed if javascript is turned off, however, the website appears more static-like and loses some aesthetic effects.
+  </p>
+
+  <br />
+  <h2>Aesthetics</h2>
+  <p>
+    When looking at different websites for inspiration, the main thing that caught my eye was the use of big bold images and font headers to capture the user's attention. This created a sleek minimalistic effect with the added bonus of being clear and easy to navigate and read. The main colour scheme throughout the website is a mix of dark grey, light grey and white The fixed navigation bar header was used because it allows readers to easily jump from one page to another and see which page they are currently on based on which nav link is highlighted. This ensures that readers can’t get lost while browsing my website. For the main content, I used a container class that has a max-width of 960px with 15px padding on each side. This keeps the text in a nice column but also allows for responsiveness on smaller screen sizes. I used two fonts, one for headers (Roboto) and one for paragraph text (Open Sans). This was done so that a header could remain distinct and different to regular paragraph text. The two fonts also complimented each other nicely.
+  </p>
+  <p>
+    The main feature of the website is the use of large background images with overlayed text. Each background image on each page is symbolic of what the content of the page is about and the overlayed text describes the same sentiment. On the home page, I used a server rack to show that this website covers technology. The slogan “Got Web?” was used because it was eye-catching and plays on the commonly known phrase “got milk?”. It also tells the reader that the website is about the web and websites. The home page background covers 100% of the height and width of any screen it is viewed on and dynamically centres itself using the CSS techniques background-position: center and background-size: cover. The background images also have a linear gradient over the top to darken the image, make the overlay text more readable, reduce bright colours to keep consistent with the overall theme and to have a nice effect if the user cannot or chooses to not load graphics. I included a scroll down icon on the home page background that links itself using an anchor tag to a position which covers the main content on the home page. I included this because it may not be obvious that you need to scroll down to see more content on the home page when it is 100% of the screen. On the other two pages, past.html and future.html, I included the same background image style but reduced its height to 70% rather than 100%. This was because I wanted to differentiate these pages from the home page as well as have a greater focus on the content rather than the background. Because you can see the start of the content I decided not to include the scroll anchor function. The backgrounds on these pages reflect the content that is talked about in them. The comments.html and source.html pages do not have background images as I believed they would detract from the content as well as wanting to prove that the background images aren’t necessary to the overall look of the website.
+  </p>
+
+  <br />
+  <h2>Accessibility</h2>
+  <p>
+    The web is an open and vast place available to all and therefore websites should consider the usability for all internet users, including those with disabilities. Throughout my website, I included alt and title tags that describe each important element, what it is and what it will do e.g. a link and what page it links to. I also ensured that the website is big, bold and responsive in its design to ensure that those that may need to zoom to read can do so without breaking the overall structure and content of the site. I could have used aria-label attributes as well which would have assisted those that use assistive screen readers even further, however, the website doesn’t have much functionality which could be misconstrued and therefore I rely more so on using alt, e.g. an X which actually is a function for closing a dialogue box.
+  </p>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-container">
+      <div id="copyright" title="Copyright statement">&copy; Copyright Lucas Hahn <span id="year">2019</span></div>
+      <div title="Student Number and Subject Information">Student Number: 12554200 | Web Systems | Subject Code: 31268</div>
+      <div><a href="sources.html" title="Source pages with links to codes, images and fonts">Sources</a></div>
+    </div>
+  </div>
+
+<!-- only for basic functions, does not affect the core functionality of the website -->
+<script type="text/javascript">
+  document.getElementById("year").innerHTML = (new Date().getFullYear());
+</script>
+</body>
+
+</html>
